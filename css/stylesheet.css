@@ -1,0 +1,85 @@
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    margin-left: 43px;
+}
+
+.navbar-nav {
+    margin-right: 91px;
+}
+
+.jumbotron {
+    background:linear-gradient(rgba(77,167,251,1), rgba(154,199,240,1));
+    width: 100%;
+    height: 532px;
+    position: relative;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.jumbotron h1,p {
+    
+}
+
+.jumbotron p {
+    width: 401px;
+    height: 177px;
+    font-size: 18px;
+    text-align: left;
+}
+
+
+.jumbotron .display-4 {
+    color: white;
+    padding-top: 195px; 
+    margin-bottom: 22px;
+}
+
+
+
+
+
+
+
+/* ! Desktop Version */
+@media (min-width: 992px) {
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+    }
+
+    /* memberi jarak kanan pada title bar */
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 36px;
+    }
+
+    /* ! garis text pada header blm WORK */
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        /* agar tidak naik2 ditambah 3px + 5px */
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 632px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 41px;
+        font-weight: bold;
+    }
