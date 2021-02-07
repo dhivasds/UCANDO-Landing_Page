@@ -1,3 +1,4 @@
+/* NAVBAR HEADER */
 .navbar {
     position: relative;
     z-index: 1;
@@ -10,23 +11,32 @@
 .navbar-nav {
     margin-right: 91px;
 }
+/* AKHIR NAVBAR */
 
+/* BACKGROUND COLOR */
 .jumbotron {
+    
     background:linear-gradient(rgba(77,167,251,1), rgba(154,199,240,1));
+    background-size: cover;
     width: 100%;
     height: 532px;
     position: relative;
+    
 }
 
 .jumbotron .container {
+    /* background: url(../Assets/img/header.png); */
+    background-size: cover;
     position: relative;
     z-index: 1;
 }
 
-
-
-.jumbotron h1,p {
-    
+/*! mengatur posisi img header */
+.jumbotron .container img{
+    margin-left: 480px;
+    margin-top: -380px;
+    width: 700px;
+    height: 376px;
 }
 
 .jumbotron p {
@@ -34,14 +44,60 @@
     height: 177px;
     font-size: 18px;
     text-align: left;
+    color: white;
+    margin-bottom: 60px;
 }
 
+.jumbotron .container .btn {
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: #489FF0;
+    margin: 50px -70px;
+}
 
 .jumbotron .display-4 {
     color: white;
     padding-top: 195px; 
     margin-bottom: 22px;
 }
+/* AKHIR BACKGROUND COLOR */
+
+/* BOX */
+
+.container .box-1 {
+    background-color: #6EB4F5;
+    width: 240px;
+    height: 310px;
+    margin-top: 120px;
+    
+}
+
+.container .box-1 h4 {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.container .box-1 p {
+    width: 206px;
+    height: 200px;
+    font-size: 16px;
+    color: white;
+    text-align: justify;
+    margin-top: 22px;
+    margin-left: 12px;
+}
+
+.container .box-border {
+    border: 2px solid black;
+    width: 240px;
+    height: 310px;
+    margin: -275px -10px 0;
+}
+
+/* AKHIR BOX */
 
 
 
@@ -62,7 +118,7 @@
         margin-right: 36px;
     }
 
-    /* ! garis text pada header blm WORK */
+    /* ! garis text pada header blm WORK (HOME,CONTACT) blm bisa di klik*/
     .nav-link:hover::after {
         content: '';
         display: block;
@@ -82,4 +138,9 @@
     .jumbotron .display-4 {
         font-size: 41px;
         font-weight: bold;
+        margin: 0 -70px;
+    }
+
+    .jumbotron .lead {
+        margin: 0 -70px;
     }
