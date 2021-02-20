@@ -1,6 +1,6 @@
 /* ! DEFAULT BISA DI SETTING UNTUK MOBILE */
 
-/* NAVBAR HEADER */
+/* NAVBAR HEADER - MOBILE*/
 .navbar {
     position: relative;
     z-index: 1;
@@ -13,9 +13,9 @@
 .navbar-nav {
     margin-right: 91px;
 }
-/* AKHIR NAVBAR */
+/* AKHIR NAVBAR - MOBILE*/
 
-/* BACKGROUND COLOR */
+/* BACKGROUND COLOR - MOBILE*/
 .jumbotron.header {
     
     background:linear-gradient(rgba(77,167,251,1), rgba(154,199,240,1));
@@ -63,9 +63,9 @@
     padding-top: 195px; 
     margin-bottom: 22px;
 }
-/* AKHIR BACKGROUND COLOR */
+/* AKHIR BACKGROUND COLOR - MOBILE */
 
-/* BOX */
+/* BOX - MOBILE*/
 
 .container .box {
     background-color: #6EB4F5;
@@ -99,9 +99,9 @@
     margin: -275px -10px 0;
 }
 
-/* AKHIR BOX */
+/* AKHIR BOX  - MOBILE*/
 
-/* BE A PART */
+/* BE A PART - MOBILE */
 .jumbotron.beAPart-center {
     margin-top: 130px;
     background: linear-gradient(rgba(76,167,252,1), rgba(134,189,241,1));
@@ -113,6 +113,9 @@
     /*? ini untuk mobile, cuman codingan msh untuk web. sudah di implementasikan di bawah */
     /* margin-top: -150px;
     margin-left: -158px; */
+    /* ! APUS HIDDEN AGAR IMAGE DI "BE A PART" MUNCUL */
+    visibility: hidden;
+    
 }
 
 .jumbotron .container .title-center {
@@ -123,7 +126,65 @@
 .jumbotron .container .text-beAPart {
     color: white;
 }
-/* AKHIR BE A PART */
+
+
+/* AKHIR BE A PART - MOBILE */
+
+
+/* QUETE - MOBILE */
+
+.container .box-quete {
+    background-color: #6EB4F5;
+    width: 240px;
+    height: 310px;
+    margin-top: 120px;
+    /*? mengatur untuk mobile posisi gambarnya secara keseluruhan */
+    
+}
+
+.container .box-border-quete {
+    border: 2px solid black;
+    width: 240px;
+    height: 310px;
+    margin: -345px -35px 0;
+}
+
+.container .box-quete .testi-1 {
+    margin-top: -65px;
+}
+
+.container .box-quete .testi-name {
+    font-size: 25px;
+    color: #6EB4F5;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.container .testi-position {
+    font-size: 35px;
+    color: #6EB4F5;
+    font-weight: bold;
+    width: 550px;
+    /* untuk tulisan "jabatan" for mobile */
+    margin-top: 30px;
+}
+
+.container .testi-quete {
+    width: 512px;
+    height: 215px;
+}
+
+.container .testi-quete {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: lighter;
+    color:#8BC3F7;
+}
+
+/* note Tanda kutip pada quetes (") */
+
+/* Akhir Quete - MOBILE */
 
 
 
@@ -179,15 +240,19 @@
 
     /*! JUMBOTRON CENTER */
     .jumbotron .container .img-center {
-        margin-top: -8  0px;
-        margin-left: -158px;
+        margin-top: -500px;
+        /* margin-right: -40px; */
+        margin-left: -700px;
+        /* margin-right: 140px; */
+
     }
 
     .jumbotron .container .text-beAPart {
         color:  white;
         width: 619px;
         height: 277px;
-        float: right;
+        margin-left: 500px;
+        /* float: right; */
     }
 
     .jumbotron .container .display-4.title-center {
@@ -203,13 +268,38 @@
     }
 
     .jumbotron .container .btn.btn-center {
+        /* position: absolute; */
         color: white;
         background-color: #FAC344;
         border-radius: 10px;
         font-weight: bold;
-        float: right;
-        margin-top: 200px;
-        margin-block-end: 40em;
+        margin-left: 500px; /* ! dikasih margin left button malah kekiri, pelajari lagi ! tentang position jg! */
+        margin-top: -230px;
+        /* margin-block-end: 40em; */
         
     }
     /* AKHIR JUMBOTRON CENTER */
+
+    /* QUETE */
+
+    .container .testi-position {
+        font-size: 35px;
+        color: #6EB4F5;
+        font-weight: bold;
+        width: 550px;
+        margin-left: 300px;
+        margin-top: -300px;
+    }
+
+    .container .testi-quete {
+        width: 512px;
+        height: 215px;
+        margin-left: 340px;
+    }
+
+    .container .testi-quete {
+       font-size: 25px;
+    }
+
+
+    /* AKHIR QUETE */
